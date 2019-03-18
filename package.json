@@ -1,0 +1,22 @@
+{
+  "name": "responsive_sass_website",
+  "version": "1.0.0",
+  "description": "Responsive landing page with sass css.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msk-git/Responsive_website_Sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msk-git/Responsive_website_Sass/issues"
+  },
+  "homepage": "https://github.com/msk-git/Responsive_website_Sass#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
