@@ -1,4 +1,4 @@
 # Responsive_website_Sass
-Responsive landing page with sass css.
+Responsive personal page with sass and css animations.
 
 Deployed version: https://msk-git.github.io/Responsive_website_Sass/
