@@ -101,7 +101,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/img/background.jpg);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -161,7 +161,9 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  animation-duration: 2s;
+  animation-name: slidein; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -181,6 +183,22 @@ main {
     padding: 0.5rem;
     font-size: 1.2rem;
     border-bottom: #ffc107 5px solid; }
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
 
 .projects {
   display: grid;
