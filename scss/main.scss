@@ -109,6 +109,7 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
+    font-size: 1.2rem;
     border-bottom: $secondary-color 5px solid;
   }
 }
@@ -128,6 +129,28 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+// Fadein effect with css animation  
+  .item {
+    opacity: 0;
+    -webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+  }
+
+// Delay each item slide by 0.5s
+  @for $x from 1 through 5 {
+  .item:nth-child(#{$x}) {
+    animation-delay: $x * 0.5s;
+    }
+  }
+  @-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 }
 
